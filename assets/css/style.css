@@ -59,6 +59,9 @@ h1 {
     font-weight: 900;
 }
 
+.scores {
+    font-weight: 900;
+}
 .popup {
     background-color: var(--third);
     box-sizing: border-box;

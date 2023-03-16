@@ -50,3 +50,18 @@ const fullQuestions = [{
         "correct": "Eminem"
     },
 ];
+
+// Variables to set the initial state of the game
+let currentQuestionIndex = 1;
+let questionNumber = 0;
+
+// Wait for the DOM to finish loading before running the game
+document.addEventListener('DOMContentLoaded', pageLoaded);
+
+/**
+ * The main game 'loop', called when the script is first loaded
+ * and after the user's answer has been processed
+ */
+function pageLoaded() {
+    document.getElementById("question-number").innerHTML = currentQuestionIndex;
+}
