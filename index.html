@@ -12,49 +12,55 @@
 </head>
 
 <body>
-    <h1>Welcome to Rap Quiz !</h1>
+    <header>
+        <h1>Welcome to Rap Quiz !</h1>
+    </header>
     <!--Game area for the questions and answers.-->
-    <section id="container">
-        <div class="game-area">
-            <span id="question">?</span>
-            <!--Buttons-->
-            <button class="btn">
-                <span class="answer" id="answer1">Answer 1</span>
-            </button>
-            <button class="btn">
-                <span class="answer" id="answer2">Answer 2</span>
-            </button>
-            <button class="btn">
-                <span class="answer" id="answer3">Answer 3</span>
-            </button>
-            <button class="btn">
-                <span class="answer" id="answer4">Answer 4</span>
-            </button>
-    </section>
-    <!-- Displayed when the game ends. Shows the final score -->
-    <div class="popup-wrapper">
-        <div class="popup">
-            <div class="popup-content">
-                <h2>Game Over!</h2>
-                <p>You got <span id="score2">0</span>/10.</p>
-                <button id="play-again" type="button">
-                    Play again
+    <main>
+        <section id="container">
+            <div class="game-area">
+                <span id="question">?</span>
+                <!--Buttons-->
+                <button class="btn">
+                    <span class="answer" id="answer1">Answer 1</span>
                 </button>
+                <button class="btn">
+                    <span class="answer" id="answer2">Answer 2</span>
+                </button>
+                <button class="btn">
+                    <span class="answer" id="answer3">Answer 3</span>
+                </button>
+                <button class="btn">
+                    <span class="answer" id="answer4">Answer 4</span>
+                </button>
+                <!-- Displayed when the game ends. Shows the final score -->
+                <div class="popup-wrapper">
+                    <div class="popup">
+                        <div class="popup-content">
+                            <h2>Game Over!</h2>
+                            <p>Your score is : <span id="score2">0</span>/10.</p>
+                            <button id="play-again" type="button">
+                                Play again
+                            </button>
+                        </div>
+                        <!--The Area that shows the correct and wrong answers.-->
+                        <section class="score-area">
+                            <h2>Question: <span id="question-number">0</span>/10</h2>
+                            <p class="scores">Correct Answers: <span id="score">0</span></p>
+                            <p class="scores">Incorrect Answers: <span id="incorrect">0</span></p>
+                        </section>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    </section>
-    <section class="score-area">
-        <h2>Question: <span id="question-number">0</span>/10</h2>
-        <p class="scores">Correct Answers: <span id="score">0</span></p>
-        <p class="scores">Incorrect Answers: <span id="incorrect">0</span></p>
-    </section>
-    </div>
-    </div>
+        </section>
+
+    </main>
+    <!--Footer-->
     <footer>
         <p id="author">Developed By : Andrea Sarreqi </p>
     </footer>
 
+    <!--Js File.-->
     <script src="assets/js/script.js"></script>
 </body>
 

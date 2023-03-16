@@ -55,7 +55,7 @@ const fullQuestions = [{
 ];
 
 // Variables to set the initial state of the game
-let currentQuestionIndex = 1;
+let currentQuestionIndex = -1;
 let questionNumber = 0;
 
 // Wait for the DOM to finish loading before running the game
@@ -66,8 +66,14 @@ document.addEventListener('DOMContentLoaded', pageLoaded);
  * and after the user's answer has been processed
  */
 function pageLoaded() {
-    document.getElementById("question-number").innerHTML = currentQuestionIndex;
+
+    document.getElementById("question-number").innerHTML = questionNumber;
+
     nextQuestion();
+
+    // Add event listeners for user click and get user answer
+    getUserAnswer();
+
 }
 
 /** Gets and array and shuffle its elements. */
@@ -78,20 +84,41 @@ function shuffle(array) {
 }
 
 function getUserAnswer() {
+
     let answers = document.getElementsByClassName("answer");
-    for(let answer of answers) {
+    for (let answer of answers) {
         answer.addEventListener("click", checkAnswer);
     }
+
+}
+
+function checkAnswer() {
+
+    const userAnswer = event.target.innerHTML;
+
+    if (userAnswer  == fullQuestions[currentQuestionIndex].correct) {
+        alert("Correct!");
+
+        incrementScore();
+        nextQuestion();
+    } else {
+        alert("Incorrect");
+
+        incrementWrongAnswer();
+        nextQuestion();
+    }
+
 }
 
 /** Show the question from fullQuestion. */
 function nextQuestion() {
+
     ++currentQuestionIndex;
 
     if (currentQuestionIndex < fullQuestions.length) {
 
         let fullQuestion = fullQuestions[currentQuestionIndex];
-        let question = document.getElementById("question");
+        let question = document.getElementById('question');
         question.textContent = fullQuestion.question;
 
         //Shuffle options.
@@ -110,5 +137,10 @@ function nextQuestion() {
         let answer4 = document.getElementById("answer4");
         answer4.textContent = fullQuestion.options[3];
 
+    }else {
+
+        gameOver();
+        
     }
+    
 }
