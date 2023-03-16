@@ -68,3 +68,7 @@ document.addEventListener('DOMContentLoaded', pageLoaded);
 function pageLoaded() {
     document.getElementById("question-number").innerHTML = currentQuestionIndex;
 }
+
+function nextQuestion () {
+
+}

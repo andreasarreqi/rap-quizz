@@ -18,14 +18,17 @@ h1 {
     background-color: var(--third);
     margin-bottom: 1rem;
     height: 5rem;
+    font-weight: 900;
+    font-size: 15px;
 }
 
 /* --------------------------- Game Layout */
 #container {
-    background-color: rgba(140, 138, 142, 0.805);
+    background-color: rgb(201, 201, 201);
     box-sizing: border-box;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px #000;
+    box-shadow: 2px 2px 2px #000;
+    border: 1px solid black;
     width: 77%;
     height: 25rem;
     max-height: 435px;
