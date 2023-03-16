@@ -1,3 +1,6 @@
+/*jshint esversion: 6 */
+/*jshint -W033 */
+
 // Array of objects with all the questions, options and correct answer
 const fullQuestions = [{
         "question": "In which U.S city was the hip hop culture created?",
