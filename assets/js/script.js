@@ -79,18 +79,5 @@ function nextQuestion() {
         let question = document.getElementById("question");
         question.textContent = fullQuestion.question;
 
-        //Grabs the questions and options and displays them.
-        let answer1 = document.getElementById("answer1");
-        answer1.textContent = fullQuestion.options[0];
-
-        let answer2 = document.getElementById("answer2");
-        answer1.textContent = fullQuestion.options[1];
-
-        let answer3 = document.getElementById("answer3");
-        answer1.textContent = fullQuestion.options[2];
-
-        let answer4 = document.getElementById("answer4");
-        answer1.textContent = fullQuestion.options[3];
-
     }
 }
