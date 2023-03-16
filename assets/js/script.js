@@ -77,6 +77,13 @@ function shuffle(array) {
 
 }
 
+function getUserAnswer() {
+    let answers = document.getElementsByClassName("answer");
+    for(let answer of answers) {
+        answer.addEventListener("click", checkAnswer);
+    }
+}
+
 /** Show the question from fullQuestion. */
 function nextQuestion() {
     ++currentQuestionIndex;
