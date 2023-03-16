@@ -140,7 +140,11 @@ function nextQuestion() {
     }else {
 
         gameOver();
-        
+
     }
+    
+}
+
+function incrementScore() {
     
 }
