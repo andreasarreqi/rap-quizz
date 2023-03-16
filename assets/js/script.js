@@ -70,6 +70,14 @@ function pageLoaded() {
     nextQuestion();
 }
 
+/** Gets and array and shuffle its elements. */
+function shuffle(array) {
+
+    array.sort(() => Math.random() - 0.5);
+
+}
+
+/** Show the question from fullQuestion. */
 function nextQuestion() {
     ++currentQuestionIndex;
 
@@ -78,6 +86,10 @@ function nextQuestion() {
         let fullQuestion = fullQuestions[currentQuestionIndex];
         let question = document.getElementById("question");
         question.textContent = fullQuestion.question;
+
+        //Shuffle options.
+        shuffle(fullQuestion.options);
+
         //Grabs the questions and options and displays them.
         let answer1 = document.getElementById("answer1");
         answer1.textContent = fullQuestion.options[0];
