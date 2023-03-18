@@ -69,10 +69,13 @@ function pageLoaded() {
 
     document.getElementById("question-number").innerHTML = questionNumber;
 
+    shuffle(fullQuestions);
+
     nextQuestion();
 
     // Add event listeners for user click and get user answer
     getUserAnswer();
+
 
 }
 
@@ -165,9 +168,36 @@ function incrementScore() {
  */
 function incrementWrongAnswer() {
 
-    let oldScore = parseInt(document.getElementById('incorrect').innerText);
-    document.getElementById('incorrect').innerText = ++oldScore;
+    let oldScore = parseInt(document.getElementById("incorrect").innerText);
+    document.getElementById("incorrect").innerText = ++oldScore;
 
-    document.getElementById('question-number').innerText = ++questionNumber;
+    document.getElementById("question-number").innerText = ++questionNumber;
+
+}
+
+/**Displayed The score and play again button when the game finishes.  */
+function gameOver() {
+
+    let popup = document.getElementsByClassName('popup')[0];
+    popup.style.display = 'block';
+
+    let controlsArea = document.getElementsByClassName('controls-area')[0];
+    controlsArea.style.display = 'none';
+
+    let score = parseInt(document.getElementById('score').innerText);
+    document.getElementById('score2').innerText = score;
+
+    // Event listener to refresh the page on click button 'Play again'
+
+    const button = document.getElementById('play-again');
+    button.addEventListener('click', playAgain);
+
+}
+
+/**Refreshes the page when play again button is clicked */
+
+function playAgain() {
+
+    window.location.reload();
 
 }
