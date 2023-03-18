@@ -38,7 +38,7 @@ h1 {
 }
 
 .btn {
-    width: 80%;
+    width: 77%;
     height: 3rem;
     letter-spacing: 1.2px;
     color: black;
@@ -50,9 +50,15 @@ h1 {
     font-weight: 800;
 }
 
+.answer {
+    padding:10px 30px;
+}
+
 .btn:hover {
     transform: scale(1.1);
     transition: transform 100ms;
+    background: rgb(52, 52, 56);
+    color: white;
 }
 
 #score {
@@ -66,6 +72,7 @@ h1 {
 .scores {
     font-weight: 900;
 }
+
 .popup {
     background-color: var(--third);
     box-sizing: border-box;
@@ -103,5 +110,3 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
-
