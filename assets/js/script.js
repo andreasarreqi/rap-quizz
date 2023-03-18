@@ -91,12 +91,14 @@ function getUserAnswer() {
     }
 
 }
-
+/**
+ * Check the answer and respond to the user if it is correct or not.
+ */
 function checkAnswer() {
 
     const userAnswer = event.target.innerHTML;
 
-    if (userAnswer  == fullQuestions[currentQuestionIndex].correct) {
+    if (userAnswer == fullQuestions[currentQuestionIndex].correct) {
         alert("Correct!");
 
         incrementScore();
@@ -106,6 +108,7 @@ function checkAnswer() {
 
         incrementWrongAnswer();
         nextQuestion();
+
     }
 
 }
@@ -137,14 +140,34 @@ function nextQuestion() {
         let answer4 = document.getElementById("answer4");
         answer4.textContent = fullQuestion.options[3];
 
-    }else {
+    } else {
 
         gameOver();
 
     }
-    
+
 }
 
+/**
+ * Gets the current score from the DOM and increments it by 1. Increment question number by 1.
+ */
 function incrementScore() {
-    
+
+    let oldScore = parseInt(document.getElementById('score').innerText);
+    document.getElementById('score').innerText = ++oldScore;
+
+    document.getElementById('question-number').innerText = ++questionNumber;
+
+}
+
+/**
+ * Gets the current incorrect answers from the DOM and increments it by 1.  Increment question number by 1.
+ */
+function incrementWrongAnswer() {
+
+    let oldScore = parseInt(document.getElementById('incorrect').innerText);
+    document.getElementById('incorrect').innerText = ++oldScore;
+
+    document.getElementById('question-number').innerText = ++questionNumber;
+
 }
