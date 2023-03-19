@@ -59,7 +59,50 @@ let currentQuestionIndex = -1;
 let questionNumber = 0;
 
 // Wait for the DOM to finish loading before running the game
-document.addEventListener('DOMContentLoaded', pageLoaded);
+document.addEventListener('DOMContentLoaded', function () {
+
+    document.getElementById("rules").style.display = "none";
+
+    let info = document.getElementById("info");
+    info.addEventListener("click", showInfoBox);
+
+    let close = document.getElementById("closeInfo");
+    close.addEventListener("click", closeInfoBox);
+
+    let start = document.getElementById("start");
+    start.addEventListener("click", display);
+
+
+    let controlsArea = document.getElementById("container");
+    controlsArea.style.display = 'none';
+
+    pageLoaded();
+
+});
+
+function display() {
+    document.getElementById("info").style.display = "none";
+    document.getElementById("start").style.display = "none";
+    document.getElementById("container").style.display = "block";
+
+
+}
+/** showes the game rules box after click "How to play game?" */
+function showInfoBox() {
+    document.getElementById("rules").style.display = "block";
+    document.getElementById("start").style.display = "none";
+
+
+}
+
+/** hides the game rules box after click "Understand!"*/
+function closeInfoBox() {
+    document.getElementById("rules").style.display = "none";
+    document.getElementById("start").style.display = "block";
+
+}
+
+
 
 /**
  * The main game 'loop', called when the script is first loaded
