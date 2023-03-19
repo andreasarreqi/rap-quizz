@@ -18,65 +18,63 @@
 
     <!--Game area for the questions and answers.-->
     <main>
-        <button id="start">Start Game</button>
-        <button id="info">How to play</button>
+        <section>
+            <button id="start">Start Game</button>
+            <button id="info">How to play</button>
 
-        <!-- game rules info section -->
-        <section id="rules">
-            <ol>
-                <li>Click Start Game button to continue.</li>
-                <li>Read the question and select your answer.</li>
-                <li>After selecting your answer you can not reselect.</li>
-                <li>The score will increment depending on your answer</li>
-                <li>At the end of game you will get the final score.</li>
-            </ol>
-            <div class="focus">
-                <p id="enjoy">Enjoy The Quiz!</p>
-                <button id="closeInfo">Ready !</button>
-            </div>
-        </section>
-
-
-
-        <section id="container">
-            <div class="controls-area">
-                <div class="game-area">
-                    <span id="question">?</span>
-                    <!--Buttons-->
-                    <button class="btn">
-                        <span class="answer" id="answer1">Answer 1</span>
-                    </button>
-                    <button class="btn">
-                        <span class="answer" id="answer2">Answer 2</span>
-                    </button>
-                    <button class="btn">
-                        <span class="answer" id="answer3">Answer 3</span>
-                    </button>
-                    <button class="btn">
-                        <span class="answer" id="answer4">Answer 4</span>
-                    </button>
+            <!-- game rules info section -->
+            <div id="rules">
+                <ol>
+                    <li>Click Start Game button to continue.</li>
+                    <li>Read the question and select your answer.</li>
+                    <li>After selecting your answer you can not reselect.</li>
+                    <li>The score will increment depending on your answer</li>
+                    <li>At the end of game you will get the final score.</li>
+                </ol>
+                <div class="focus">
+                    <p id="enjoy">Enjoy The Quiz!</p>
+                    <button id="closeInfo">Ready !</button>
                 </div>
-                <!--The Area that shows the correct and wrong answers.-->
-                <section class="score-area">
-                    <h2>Question: <span id="question-number">0</span>/10</h2>
-                    <p class="scores">Correct Answers: <span id="score">0</span></p>
-                    <p class="scores">Incorrect Answers: <span id="incorrect">0</span></p>
-                </section>
             </div>
-            <!-- Displayed when the game ends. Shows the final score -->
-            <div class="popup-wrapper">
-                <div class="popup">
-                    <div class="popup-content">
-                        <h2>Game Over!</h2>
-                        <p>Your score is : <span id="score2">0</span>/10.</p>
-                        <button id="play-again" type="button">
-                            Play again
+            <section id="container">
+                <div class="controls-area">
+                    <div class="game-area">
+                        <span id="question">?</span>
+                        <!--Buttons-->
+                        <button class="btn answer" id="answer1">
+
+                        </button>
+                        <button class="btn answer" id="answer2">
+
+                        </button>
+                        <button class="btn answer" id="answer3">
+
+                        </button>
+                        <button class="btn answer" id="answer4">
+
                         </button>
                     </div>
+                    <!--The Area that shows the correct and wrong answers.-->
+                    <section class="score-area">
+                        <h2>Question: <span id="question-number">0</span>/10</h2>
+                        <p class="scores">Correct Answers: <span id="score">0</span></p>
+                        <p class="scores">Incorrect Answers: <span id="incorrect">0</span></p>
+                    </section>
                 </div>
-            </div>
+                <!-- Displayed when the game ends. Shows the final score -->
+                <div class="popup-wrapper">
+                    <div class="popup">
+                        <div class="popup-content">
+                            <h2>Game Over!</h2>
+                            <p>Your score is : <span id="score2">0</span>/10.</p>
+                            <button id="play-again" type="button">
+                                Play again
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </section>
-
     </main>
     <!--Footer-->
     <footer>

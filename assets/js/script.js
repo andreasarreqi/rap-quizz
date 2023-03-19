@@ -80,18 +80,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
+/**
+ * Display function hides the start and info and displays the container.
+ */
 function display() {
     document.getElementById("info").style.display = "none";
     document.getElementById("start").style.display = "none";
     document.getElementById("container").style.display = "block";
 
-
 }
+
 /** showes the game rules box after click "How to play game?" */
 function showInfoBox() {
     document.getElementById("rules").style.display = "block";
     document.getElementById("start").style.display = "none";
-
 
 }
 
@@ -101,8 +103,6 @@ function closeInfoBox() {
     document.getElementById("start").style.display = "block";
 
 }
-
-
 
 /**
  * The main game 'loop', called when the script is first loaded
@@ -118,7 +118,6 @@ function pageLoaded() {
 
     // Add event listeners for user click and get user answer
     getUserAnswer();
-
 
 }
 
