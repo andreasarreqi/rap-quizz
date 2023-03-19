@@ -109,15 +109,14 @@ function checkAnswer() {
 
         alert("Correct!");
 
-        incrementScore();
-
         nextQuestion();
+        incrementScore();
 
     } else {
 
-        alert(`The correct answer is ${fullQuestions[currentQuestionIndex].correct}`)
-        incrementWrongAnswer();
+        alert(`The correct answer is ${fullQuestions[currentQuestionIndex].correct}`);
 
+        incrementWrongAnswer();
         nextQuestion();
 
     }
