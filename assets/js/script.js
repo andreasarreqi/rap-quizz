@@ -86,6 +86,9 @@ function shuffle(array) {
 
 }
 
+/**
+ * Get user answer
+ */
 function getUserAnswer() {
 
     let answers = document.getElementsByClassName("answer");
@@ -94,6 +97,7 @@ function getUserAnswer() {
     }
 
 }
+
 /**
  * Check the answer and respond to the user if it is correct or not.
  */
@@ -101,15 +105,19 @@ function checkAnswer() {
 
     const userAnswer = event.target.innerHTML;
 
-    if (userAnswer == fullQuestions[currentQuestionIndex].correct) {
+    if (userAnswer === fullQuestions[currentQuestionIndex].correct) {
+
         alert("Correct!");
 
         incrementScore();
-        nextQuestion();
-    } else {
-        alert("Incorrect");
 
+        nextQuestion();
+
+    } else {
+
+        alert(`The correct answer is ${fullQuestions[currentQuestionIndex].correct}`)
         incrementWrongAnswer();
+
         nextQuestion();
 
     }
