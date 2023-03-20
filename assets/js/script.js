@@ -149,14 +149,24 @@ function checkAnswer() {
 
     if (userAnswer === fullQuestions[currentQuestionIndex].correct) {
 
-        alert("Correct!");
+        Swal.fire({
+            icon: 'success',
+            title: 'Congratulations!',
+            text: 'Your answer was correct.',
+            confirmButtonText: 'Next',
+          })
 
         nextQuestion();
         incrementScore();
 
     } else {
-
-        alert(`The correct answer is ${fullQuestions[currentQuestionIndex].correct}`);
+        
+        Swal.fire({
+            icon: 'error',
+            title: 'Sorry...',
+            text: `The correct answer is ${fullQuestions[currentQuestionIndex].correct}!`,
+            confirmButtonText: 'Next',
+          })
 
         incrementWrongAnswer();
         nextQuestion();
