@@ -2,14 +2,15 @@
 body {
     text-align: center;
     font-family: sans-serif;
+    background-image: linear-gradient(to right, #8360c3, #2ebf91);
 
 }
 
 /* --------------------------- Heading */
 h1 {
     text-align: center;
-    font-size: 2rem;
-    margin-bottom: 11%;
+    font-size: 1.6rem;
+    margin-bottom: 10%;
 }
 
 #question {
@@ -28,7 +29,7 @@ button {
     height: 3rem;
     letter-spacing: 1.2px;
     color: black;
-    background: rgb(201, 201, 201);
+    background-image: linear-gradient(to right, #DECBA4, #3E5151);
     margin-bottom: 1rem;
     border-radius: 50px;
     cursor: pointer;
@@ -40,6 +41,7 @@ button {
     margin-left: auto;
     display: list-item;
     margin-right: auto;
+    margin-top: 17%;
 }
 
 #info {
@@ -55,12 +57,16 @@ button {
 }
 
 #info:hover {
-    background: rgb(52, 52, 56);
+    transform: scale(1.1);
+    transition: transform 100ms;
+    background-image: linear-gradient(to right, #9e9c9c 0%, black 100%);
     color: white;
 }
 
 button:hover {
-    background: rgb(52, 52, 56);
+    transform: scale(1.1);
+    transition: transform 100ms;
+    background-image: linear-gradient(to right, #9e9c9c 0%, black 100%);
     color: white;
 }
 
@@ -80,11 +86,11 @@ button:hover {
 }
 
 ol {
-    margin: 20px;
+    margin: 0x;
 }
 
 #enjoy {
-    margin-top: 20%;
+    margin: 6%;
     font-size: 1rem;
     font-weight: bold;
     text-align: center;
@@ -95,7 +101,9 @@ ol {
 }
 
 #closeInfo:hover {
-    background: rgb(52, 52, 56);
+    transform: scale(1.1);
+    transition: transform 100ms;
+    background-image: linear-gradient(to right, #9e9c9c 0%, black 100%);
     color: white;
 }
 
@@ -120,7 +128,7 @@ ol {
     border: 2px solid black;
     letter-spacing: 1.2px;
     color: black;
-    background: rgb(201, 201, 201);
+    background-image: linear-gradient(to right, #DECBA4, #3E5151);
     margin-bottom: 1rem;
     border-radius: 50px;
     font-weight: 800;
@@ -130,7 +138,7 @@ ol {
 .btn:hover {
     transform: scale(1.1);
     transition: transform 100ms;
-    background: rgb(52, 52, 56);
+    background-image: linear-gradient(to right, #9e9c9c 0%, black 100%);
     color: white;
 }
 
@@ -174,7 +182,9 @@ ol {
 }
 
 #play-again:hover {
-    background: rgb(52, 52, 56);
+    transform: scale(1.1);
+    transition: transform 100ms;
+    background-image: linear-gradient(to right, #9e9c9c 0%, black 100%);
     color: white;
     transform: scale(1.1);
     transition: transform 100ms;
@@ -182,6 +192,9 @@ ol {
 
 /* --------------------------- Footer */
 footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     background: rgb(52, 52, 56);
     color: white;
     padding: 2px 0px 2px 0px;
@@ -189,7 +202,49 @@ footer {
     font-size: 0.6rem;
     margin-left: auto;
     margin-right: auto;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+}
+
+
+/* On screens that are 600px or less */
+@media screen and (max-width: 600px) {
+    #start {
+        margin-top: 32%;
+    }
+
+    .answer {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* On screens that are 600px or less */
+@media screen and (max-width: 375px) {
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    .answer {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        font-size: 0.7rem;
+
+    }
+
+    .score-area {
+        font-size: 0.8rem;
+    }
+
+    #container {
+        width: 100%;
+        min-height: 30vh;
+    }
+
+    #rules {
+        width: 100%;
+    }
+
+    #start {
+        margin-top: 65%;
+    }
 }
