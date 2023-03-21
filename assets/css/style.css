@@ -168,6 +168,10 @@ ol {
     padding-top: 25%;
 }
 
+.popup-content p {
+    font-weight: bold;
+}
+
 #play-again {
     width: 50%;
     height: 3rem;
