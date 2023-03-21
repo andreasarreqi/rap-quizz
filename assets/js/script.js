@@ -154,19 +154,19 @@ function checkAnswer() {
             title: 'Congratulations!',
             text: 'Your answer was correct.',
             confirmButtonText: 'Next',
-          })
+        })
 
         nextQuestion();
         incrementScore();
 
     } else {
-        
+
         Swal.fire({
             icon: 'error',
             title: 'Sorry...',
             text: `The correct answer is ${fullQuestions[currentQuestionIndex].correct}!`,
             confirmButtonText: 'Next',
-          })
+        })
 
         incrementWrongAnswer();
         nextQuestion();
@@ -254,7 +254,6 @@ function gameOver() {
 }
 
 /**Refreshes the page when play again button is clicked */
-
 function playAgain() {
 
     window.location.reload();
