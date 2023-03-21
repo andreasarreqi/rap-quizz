@@ -55,7 +55,7 @@ const fullQuestions = [{
 ];
 
 // Variables to set the initial state of the game
-let currentQuestionIndex = -1;
+let currentQuestionIndex = 0;
 let questionNumber = 0;
 
 // Wait for the DOM to finish loading before running the game
@@ -149,24 +149,26 @@ function checkAnswer() {
 
     if (userAnswer === fullQuestions[currentQuestionIndex].correct) {
 
+        //The modal that pops up when the correct answer is selected.
         Swal.fire({
             icon: 'success',
             title: 'Congratulations!',
             text: 'Your answer was correct.',
             confirmButtonText: 'Next',
-        })
+        });
 
         nextQuestion();
         incrementScore();
 
     } else {
 
+        //The modal that pops up when the incorrect answer is selected.
         Swal.fire({
             icon: 'error',
             title: 'Sorry...',
             text: `The correct answer is ${fullQuestions[currentQuestionIndex].correct}!`,
             confirmButtonText: 'Next',
-        })
+        });
 
         incrementWrongAnswer();
         nextQuestion();
