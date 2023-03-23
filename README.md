@@ -1,4 +1,4 @@
-# Rap Quiz)
+# Rap Quiz
 
 ![Alt text](assets/images/responsive.PNG)
 
@@ -23,6 +23,9 @@ Welcome to my very own [Rap Quiz](https://andreasarreqi.github.io/rap-quizz/).
 <details>
 <summary>Favicon</summary>
 
+- The icon on the Browser tab next to the website name.
+- There to help the user navigate easier through the browser tab.
+
 ![Alt text](assets/images/favicon.PNG)
 
 </details>
@@ -31,6 +34,10 @@ Welcome to my very own [Rap Quiz](https://andreasarreqi.github.io/rap-quizz/).
 
 <details>
 <summary>Main Page</summary>
+
+- The main page of the website.
+- Consist of a Welcome header, Start Game button and How To Play button and a footer.
+
 
 ![Alt text](assets/images/main-page.PNG)
 
@@ -41,6 +48,9 @@ Welcome to my very own [Rap Quiz](https://andreasarreqi.github.io/rap-quizz/).
 <details>
 <summary>Start Button</summary>
 
+- The Start Game button.
+- When clicked the user can start to play the quiz.
+
 ![Alt text](assets/images/start-button.PNG)
 
 </details>
@@ -49,6 +59,9 @@ Welcome to my very own [Rap Quiz](https://andreasarreqi.github.io/rap-quizz/).
 
 <details>
 <summary>How To Play Button</summary>
+
+- The How To Play button.
+- When clicked the user can read through the rules/instructions.
 
 ![Alt text](assets/images/instructions-button.PNG)
 
@@ -60,6 +73,9 @@ Welcome to my very own [Rap Quiz](https://andreasarreqi.github.io/rap-quizz/).
 <details>
 <summary>Rules</summary>
 
+- Game rules/instructions.
+- There so the user has an understanding on how the game works and when ready can click the Ready button.
+
 ![Alt text](assets/images/game-rules.PNG)
 
 </details>
@@ -69,6 +85,9 @@ Welcome to my very own [Rap Quiz](https://andreasarreqi.github.io/rap-quizz/).
 <details>
 <summary>Quiz Area</summary>
 
+- The actual Quiz Game.
+- The quiz area consists of a question, 4 choices to choose from.
+
 ![Alt text](assets/images/qui-area.PNG)
 
 </details>
@@ -77,7 +96,23 @@ Welcome to my very own [Rap Quiz](https://andreasarreqi.github.io/rap-quizz/).
 
 
 <details>
+<summary>Question Number</summary>
+
+- The question count.
+- The question count show the questions answered out of 10 questions.
+
+![Alt text](assets/images/question-number.PNG)
+
+</details>
+
+
+
+<details>
 <summary>Correct Answer score & Modal</summary>
+
+- The Correct answer score.
+- Incremented when the right answer is clicked and a congratulating modal is shown.
+
 
 ![Alt text](assets/images/correct-answer.PNG)
 
@@ -93,6 +128,11 @@ Welcome to my very own [Rap Quiz](https://andreasarreqi.github.io/rap-quizz/).
 <details>
 <summary>Incorrect Answer score & Modal</summary>
 
+- The Incorrect answer score.
+- Incremented when the wrong answer is clicked and a Wrong answer modal is shown along with the correct answer to 
+  that particular question.
+
+
 ![Alt text](assets/images/incorrect-answer.PNG)
 
 ![Alt text](assets/images/incorrect-modal.PNG)
@@ -105,6 +145,9 @@ Welcome to my very own [Rap Quiz](https://andreasarreqi.github.io/rap-quizz/).
 <details>
 <summary>Game Over</summary>
 
+- The game over pop-up
+- Showing the accumulated score and a Play Again button.
+
 ![Alt text](assets/images/fame-over.PNG)
 
 </details>
@@ -114,6 +157,10 @@ Welcome to my very own [Rap Quiz](https://andreasarreqi.github.io/rap-quizz/).
 
 <details>
 <summary>Play Again Button</summary>
+
+- Restart game button
+- Shown alongside the game over pop-up. Gives the user the choice to play again.
+
 
 ![Alt text](assets/images/play-again.PNG)
 
@@ -334,6 +381,8 @@ WAVE validator.
 
 ### Unfixed Bugs / Other
 
+- The only warning was on the JSHint showing that the Swal variable is not defined and there is a Script source  
+  link on the HTML file allowing the use of the Modal when an answer is clicked , other than that there were no bugs found.
 
 ## Deployment
 

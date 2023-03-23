@@ -72,7 +72,6 @@ document.addEventListener('DOMContentLoaded', function () {
     let start = document.getElementById("start");
     start.addEventListener("click", display);
 
-
     let controlsArea = document.getElementById("container");
     controlsArea.style.display = 'none';
 
