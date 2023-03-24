@@ -396,15 +396,16 @@ WAVE validator.
 
 
 ## Credits 
-- Font Awesome.
+- [Font Awesome.](https://fontawesome.com/)
 
     ![Alt text](assets/images/font-awesome.PNG)
 
-- Makeuseof.com (Linear gradient for background, buttons + Hover)
+- [Makeuseof.com](https://www.makeuseof.com/css-background-gradients/#background-gradients-using-css)  (Linear 
+  gradient for background, buttons + Hover)
 
     ![Alt text](assets/images/linear%20gradient.PNG)
 
-- SweetAlert 2 (Correct & Incorrect Modal)
+- [SweetAlert 2](https://sweetalert2.github.io/) (Correct & Incorrect Modal)
 
     ![Alt text](assets/images/correct-modal.PNG)
 
